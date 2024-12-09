@@ -1,0 +1,906 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.18)  8 DEC 2024 14:02
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks20
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/crop\crop.sty
+Package: crop 2017/11/19 1.10 crop marks (mf)
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+\CROP@index=\count198
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\CROP@offset=\count199
+Package crop Info: Local config file crop.cfg used on input line 622.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/xelatex/xetexconfig\crop.cfg)
+) (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+) (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen151
+))
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen152
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count266
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count267
+\leftroot@=\count268
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count269
+\DOTSCASE@=\count270
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen153
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count271
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count272
+\dotsspace@=\muskip16
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks22
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks23
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
+\@envbody=\toks24
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen160
+\ar@mcellbox=\box53
+\extrarowheight=\dimen161
+\NC@list=\toks26
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box54
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
+y
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip55
+\f@nch@O@elh=\skip56
+\f@nch@O@erh=\skip57
+\f@nch@O@olh=\skip58
+\f@nch@O@orh=\skip59
+\f@nch@O@elf=\skip60
+\f@nch@O@erf=\skip61
+\f@nch@O@olf=\skip62
+\f@nch@O@orf=\skip63
+) (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count278
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+\linenopenalty=\count279
+\output=\toks27
+\linenoprevgraf=\count280
+\linenumbersep=\dimen162
+\linenumberwidth=\dimen163
+\c@linenumber=\count281
+\c@pagewiselinenumber=\count282
+\c@LN@truepage=\count283
+\c@internallinenumber=\count284
+\c@internallinenumbers=\count285
+\quotelinenumbersep=\dimen164
+\bframerule=\dimen165
+\bframesep=\dimen166
+\bframebox=\box55
+\linenoamsmath@ams@eqpen=\count286
+LaTeX Info: Redefining \\ on input line 3180.
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/sttools\flushend.sty
+Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
+\flushend@@lastskip@a=\skip64
+\flushend@@lastskip@b=\skip65
+\flushend@@lastnode=\count287
+\var@@loop@iter=\count288
+\var@@temp@spread=\dimen167
+\var@@temp@a=\dimen168
+\var@@temp@loop=\dimen169
+\flushend@@page@rule=\dimen170
+\flushend@@varbox@lastpage=\box56
+\flushend@@varbox@a=\box57
+\flushend@@varbox@c=\box58
+\flushend@@tempbox@a=\box59
+\flushend@@tempbox@c=\box60
+\flushend@@floatbox=\box61
+\@viper=\box62
+\hold@viper=\box63
+\atColsBreak=\toks28
+\atColsEnd=\toks29
+\oldbreak@skip=\dimen171
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/sttools\stfloats.sty
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
+ings
+\@dblbotnum=\count289
+\c@dblbotnumber=\count290
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks30
+\thm@bodyfont=\toks31
+\thm@headfont=\toks32
+\thm@notefont=\toks33
+\thm@headpunct=\toks34
+\thm@preskip=\skip66
+\thm@postskip=\skip67
+\thm@headsep=\skip68
+\dth@everypar=\toks35
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/changepage\chngpage.sty
+Package: chngpage 2009/10/20 v1.2b change page layout
+\c@cp@cnt=\count291
+\c@cp@tempcnt=\count292
+) (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count293
+\l__pdf_internal_box=\box64
+))
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count294
+\l__lipsum_a_int=\count295
+\l__lipsum_b_int=\count296
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2024/07/07 v2.1c lastpage: 2.09 or 2e? (HMM)
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+Package: lastpage2e 2024/07/07 v2.1c Decide which 2e lastpage version to use (H
+MM)
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern
+.sty
+Package: lastpagemodern 2024-07-07 v2.1c Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count297
+) 
+)) (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count298
+\calc@Bcount=\count299
+\calc@Adimen=\dimen172
+\calc@Bdimen=\dimen173
+\calc@Askip=\skip69
+\calc@Bskip=\skip70
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count300
+\calc@Cskip=\skip71
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count301
+\lst@gtempboxa=\box65
+\lst@token=\toks36
+\lst@length=\count302
+\lst@currlwidth=\dimen174
+\lst@column=\count303
+\lst@pos=\count304
+\lst@lostspace=\dimen175
+\lst@width=\dimen176
+\lst@newlines=\count305
+\lst@lineno=\count306
+\lst@maxwidth=\dimen177
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count307
+\lst@skipnumbers=\count308
+\lst@framebox=\box66
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen178
+\WF@size=\dimen179
+\c@WF@wrappedlines=\count309
+\WF@box=\box67
+\WF@everypar=\toks37
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen180
+\TX@old@table=\dimen181
+\TX@old@col=\dimen182
+\TX@target=\dimen183
+\TX@delta=\dimen184
+\TX@cols=\count310
+\TX@ftn=\toks38
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip72
+\LTright=\skip73
+\LTpre=\skip74
+\LTpost=\skip75
+\LTchunksize=\count311
+\LTcapwidth=\dimen185
+\LT@head=\box68
+\LT@firsthead=\box69
+\LT@foot=\box70
+\LT@lastfoot=\box71
+\LT@gbox=\box72
+\LT@cols=\count312
+\LT@rows=\count313
+\c@LT@tables=\count314
+\c@LT@chunks=\count315
+\LT@p@ftn=\toks39
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip76
+\enit@outerparindent=\dimen186
+\enit@toks=\toks40
+\enit@inbox=\box73
+\enit@count@id=\count316
+\enitdp@description=\count317
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count318
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count319
+\c@listtotal=\count320
+\c@listcount=\count321
+\c@liststart=\count322
+\c@liststop=\count323
+\c@citecount=\count324
+\c@citetotal=\count325
+\c@multicitecount=\count326
+\c@multicitetotal=\count327
+\c@instcount=\count328
+\c@maxnames=\count329
+\c@minnames=\count330
+\c@maxitems=\count331
+\c@minitems=\count332
+\c@citecounter=\count333
+\c@maxcitecounter=\count334
+\c@savedcitecounter=\count335
+\c@uniquelist=\count336
+\c@uniquename=\count337
+\c@refsection=\count338
+\c@refsegment=\count339
+\c@maxextratitle=\count340
+\c@maxextratitleyear=\count341
+\c@maxextraname=\count342
+\c@maxextradate=\count343
+\c@maxextraalpha=\count344
+\c@abbrvpenalty=\count345
+\c@highnamepenalty=\count346
+\c@lownamepenalty=\count347
+\c@maxparens=\count348
+\c@parenlevel=\count349
+\blx@tempcnta=\count350
+\blx@tempcntb=\count351
+\blx@tempcntc=\count352
+\c@blx@maxsection=\count353
+\blx@maxsegment@0=\count354
+\blx@notetype=\count355
+\blx@parenlevel@text=\count356
+\blx@parenlevel@foot=\count357
+\blx@sectionciteorder@0=\count358
+\blx@sectionciteorderinternal@0=\count359
+\blx@entrysetcounter=\count360
+\blx@biblioinstance=\count361
+\labelnumberwidth=\skip77
+\labelalphawidth=\skip78
+\biblabelsep=\skip79
+\bibitemsep=\skip80
+\bibnamesep=\skip81
+\bibinitsep=\skip82
+\bibparsep=\skip83
+\bibhang=\skip84
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language79
+\c@mincomprange=\count362
+\c@maxcomprange=\count363
+\c@mincompwidth=\count364
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count365
+\c@savedafterword=\count366
+\c@annotator=\count367
+\c@savedannotator=\count368
+\c@author=\count369
+\c@savedauthor=\count370
+\c@bookauthor=\count371
+\c@savedbookauthor=\count372
+\c@commentator=\count373
+\c@savedcommentator=\count374
+\c@editor=\count375
+\c@savededitor=\count376
+\c@editora=\count377
+\c@savededitora=\count378
+\c@editorb=\count379
+\c@savededitorb=\count380
+\c@editorc=\count381
+\c@savededitorc=\count382
+\c@foreword=\count383
+\c@savedforeword=\count384
+\c@holder=\count385
+\c@savedholder=\count386
+\c@introduction=\count387
+\c@savedintroduction=\count388
+\c@namea=\count389
+\c@savednamea=\count390
+\c@nameb=\count391
+\c@savednameb=\count392
+\c@namec=\count393
+\c@savednamec=\count394
+\c@translator=\count395
+\c@savedtranslator=\count396
+\c@shortauthor=\count397
+\c@savedshortauthor=\count398
+\c@shorteditor=\count399
+\c@savedshorteditor=\count400
+\c@labelname=\count401
+\c@savedlabelname=\count402
+\c@institution=\count403
+\c@savedinstitution=\count404
+\c@lista=\count405
+\c@savedlista=\count406
+\c@listb=\count407
+\c@savedlistb=\count408
+\c@listc=\count409
+\c@savedlistc=\count410
+\c@listd=\count411
+\c@savedlistd=\count412
+\c@liste=\count413
+\c@savedliste=\count414
+\c@listf=\count415
+\c@savedlistf=\count416
+\c@location=\count417
+\c@savedlocation=\count418
+\c@organization=\count419
+\c@savedorganization=\count420
+\c@origlocation=\count421
+\c@savedoriglocation=\count422
+\c@origpublisher=\count423
+\c@savedorigpublisher=\count424
+\c@publisher=\count425
+\c@savedpublisher=\count426
+\c@language=\count427
+\c@savedlanguage=\count428
+\c@origlanguage=\count429
+\c@savedoriglanguage=\count430
+\c@pageref=\count431
+\c@savedpageref=\count432
+\shorthandwidth=\skip85
+\shortjournalwidth=\skip86
+\shortserieswidth=\skip87
+\shorttitlewidth=\skip88
+\shortauthorwidth=\skip89
+\shorteditorwidth=\skip90
+\locallabelnumberwidth=\skip91
+\locallabelalphawidth=\skip92
+\localshorthandwidth=\skip93
+\localshortjournalwidth=\skip94
+\localshortserieswidth=\skip95
+\localshorttitlewidth=\skip96
+\localshortauthorwidth=\skip97
+\localshorteditorwidth=\skip98
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count433
+\c@textcitetotal=\count434
+\c@textcitemaxnames=\count435
+\c@biburlbigbreakpenalty=\count436
+\c@biburlbreakpenalty=\count437
+\c@biburlnumpenalty=\count438
+\c@biburlucpenalty=\count439
+\c@biburllcpenalty=\count440
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count441
+)
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-co
+mp.bbx
+File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bb
+x
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count442
+\c@bbx:relatedtotal=\count443
+)))
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric-co
+mp.cbx
+File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count444
+\c@cbx@tempcntb=\count445
+\c@cbx@tempcntc=\count446
+\c@cbx@tempcntd=\count447
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2024-01-04 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
+\@quotelevel=\count448
+\@quotereset=\count449
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+3.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(main.aux (Nomenclature.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count450
+\scratchdimen=\dimen187
+\scratchbox=\box74
+\nofMPsegments=\count451
+\nofMParguments=\count452
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count453
+\MPscratchDim=\dimen188
+\MPnumerator=\count454
+\makeMPintoPDFobject=\count455
+\everyMPtoPDFconversion=\toks42
+)
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package crop Info: requested driver: `' on input line 23.
+Package crop Info: detected driver: `pdftex' on input line 23.
+Package crop Info: using `pdftex' graphics driver on input line 23.
+\c@lstlisting=\count456
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lb
+x
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 23.
+Package biblatex Info: Reference segment=0 on input line 23.
+ (Title/title.tex
+<Title/Unige-logo.jpeg, id=1, 227.85126pt x 227.85126pt>
+File: Title/Unige-logo.jpeg Graphic file (type jpg)
+<use Title/Unige-logo.jpeg>
+Package pdftex.def Info: Title/Unige-logo.jpeg  used on input line 9.
+(pdftex.def)             Requested size: 142.26378pt x 142.26761pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
+
+{C:/Users/carol/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/caro
+l/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Title/Unige-log
+o.jpeg>])
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 2
+6.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+(main.toc)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [1]
+\openout2 = `Nomenclature.aux'.
+
+ (Nomenclature.tex) [2
+
+] (Main/AssignmentDescription.tex
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+.
+
+(C:\Users\carol\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 5.
+
+[3
+
+
+]
+
+pdfTeX warning: pdflatex.exe (file ./Resources/cad_model-1.pdf): PDF inclusion:
+ found PDF version <1.6>, but at most version <1.5> allowed
+<Resources/cad_model-1.pdf, id=24, 567.83572pt x 794.97pt>
+File: Resources/cad_model-1.pdf Graphic file (type pdf)
+<use Resources/cad_model-1.pdf>
+Package pdftex.def Info: Resources/cad_model-1.pdf  used on input line 27.
+(pdftex.def)             Requested size: 386.95749pt x 541.76122pt.
+[4 <./Resources/cad_model-1.pdf, page is rotated 90 degrees>])
+(Main/Exercise1.tex
+Overfull \hbox (30.56747pt too wide) detected at line 68
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
+
+ []
+
+[5] [6] [7]
+<MotionOfTheManipulator.png, id=76, 526.96875pt x 395.22656pt>
+File: MotionOfTheManipulator.png Graphic file (type png)
+<use MotionOfTheManipulator.png>
+Package pdftex.def Info: MotionOfTheManipulator.png  used on input line 267.
+(pdftex.def)             Requested size: 435.32422pt x 326.50616pt.
+<FinalConfiguration.png, id=77, 526.96875pt x 395.22656pt>
+File: FinalConfiguration.png Graphic file (type png)
+<use FinalConfiguration.png>
+Package pdftex.def Info: FinalConfiguration.png  used on input line 273.
+(pdftex.def)             Requested size: 435.32422pt x 326.50616pt.
+<MotionOfTheManipulator_xy.png, id=78, 1445.4pt x 697.10437pt>
+File: MotionOfTheManipulator_xy.png Graphic file (type png)
+<use MotionOfTheManipulator_xy.png>
+Package pdftex.def Info: MotionOfTheManipulator_xy.png  used on input line 279.
+
+(pdftex.def)             Requested size: 459.51054pt x 221.62068pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [8] (Appendix/Appendix.tex) [9 <./MotionOfTheManipulator.png (PNG copy)>]
+[10 <./FinalConfiguration.png (PNG copy)> <./MotionOfTheManipulator_xy.png (PNG
+ copy)>] 
+enddocument/afterlastpage: lastpage setting LastPage.
+(main.aux (Nomenclature.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 14825 strings out of 474486
+ 269499 string characters out of 5743754
+ 1959542 words of memory out of 5000000
+ 36864 multiletter control sequences out of 15000+600000
+ 587200 words of font info for 80 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 79i,13n,93p,1131b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx7.pfb><C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb><C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/carol/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/carol/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/carol/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/carol/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
+carol/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C
+:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb
+><C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.
+pfb><C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr
+o8a.pfb><C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
+b8a.pfb><C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
+r8a.pfb><C:/Users/carol/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on main.pdf (11 pages, 3325602 bytes).
+PDF statistics:
+ 151 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

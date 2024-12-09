@@ -1,0 +1,283 @@
+\section{Exercise 1} \label{P1}
+% Write some intro
+\textit{[Comment] For the last exercises include an image of the initial robot image of the final robot configuration} 
+
+\textit{[Comment] For each exercise report the results obtained and provide an explanation of the result obtained (even though it might seem trivial). The matlab code is NOT an explanation of the algorithm.} 
+
+\subsection*{Q1.1}
+
+The calculation of each transformation matrix $\mathbf{^i_j T_0}$, which represents the transformation from frame $<i>$ to the next frame $<j>$ in the initial configuration ($\mathbf{q} = 0$), takes into account both the rotational and translational contributions.
+
+\begin{itemize}
+	\item \textbf{Rotational Contribution}: The rotational part is computed with Yaw-Pitch-Roll convention for rotation, which defines the sequence of rotations around the $z$, $y$, and $x$ axes, respectively.
+	\item \textbf{Translational Contribution}: The translational part is represented by the elements contained in the first three rows of the fourth column of the transformation matrix.
+\end{itemize}
+Given the general form of the trasformation matrix: 
+\begin{equation*}
+	^i_j T_0 = \begin{pmatrix}
+		^i_j R_0 & ^i_j P_0 \\
+		0_{3x3} & 1
+	\end{pmatrix}
+\end{equation*}
+where $j$ is the current frame of the chain and $i$ is the joint that connect the rigid body where is the  $j$-th joint to the base's reference frame. Instead, $^i_j R_0$ is the rotation matrix that define the rotation from the frame $<i>$ to $<j>$ and the point $^i_j P_0$ indicate the position of the frame $<j>$ with respect to frame $<i>$. All those rappresentations are at the istant $\mathbf{q} = 0$. Below the results of calculated transformations with detailed explanations:
+
+\begin{gather*}
+	^b_1 T_0 = \begin{pmatrix}
+		1 & 0 & 0 & 0 \\
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 0.105 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \quad
+	^1_2 T_0 = \begin{pmatrix}
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 0 \\
+		1 & 0 & 0 & 0.110 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \quad
+	^2_3 T_0 = \begin{pmatrix}
+		0 & 0 & 1 & 0.100 \\
+		0 & -1 & 0 & 0 \\
+		1 & 0 & 0 & 0 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \quad
+	^3_4 T_0 = \begin{pmatrix}
+		0 & 0 & 1 & 0 \\
+		0 & -1 & 0 & 0 \\
+		1 & 0 & 0 & 0.325 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \quad \\ \\
+	^4_5 T_0 = \begin{pmatrix}
+		0 & 0 & 1 & 0.095 \\
+		-1 & 0 & 0 & 0 \\
+		0 & -1 & 0 & 0 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \quad
+	^5_6 T_0 = \begin{pmatrix}
+		-1 & 0 & 0 & 0 \\
+		0 & -1 & 0 & 0 \\
+		0 & 0 & 1 & 0.095 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \quad
+	^6_7 T_0 = \begin{pmatrix}
+		1 & 0 & 0 & 0 \\
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 0.355 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \quad
+	 \nonumber
+\end{gather*}
+\\
+\begin{itemize}
+	\item \(\mathbf{^b_1 T_0}\): The first configuration has not rotational contribution. The only contribution is given by traslation  along $z$-axis with a values of $0.105$ metres.
+	\begin{equation*}
+		^b_1 R = I_{3x3}, \quad ^b_1 P = \begin{pmatrix} 0 \\ 0 \\ 0.105 \end{pmatrix}
+	\end{equation*}
+	\item \(\mathbf{^1_2 T_0}\): In this case, the rotation matrix \(\mathbf{^1_2 R}\) is composed of two contributions: a first rotation around the $z$-axis by $-90^\circ$ and a second rotation around the $y$-axis by $-90^\circ$. The translational contribution, on the other hand, is along the $z$-axis with a value of $0.110$ metres.
+	\begin{equation*}
+		^1_2 R = R_{z}(-90^\circ) R_{y}(-90^\circ), \quad ^1_2 P = \begin{pmatrix} 0 \\ 0 \\ 0.110 \end{pmatrix}
+	\end{equation*}
+	
+	\item \(\mathbf{^2_3 T_0}\): Similar to the previous case, the total rotation matrix is composed of a first contribution around the $z$-axis (in this configuration equal to $-180^\circ$) and a second contribution around the $y$-axis by $-90^\circ$. However, the translational contributio acts along the $x$-axis with a value of $0.100$ metres.
+	\begin{equation*}
+		^2_3 R = R_{z}(-180^\circ) R_{y}(-90^\circ), \quad ^2_3 P = \begin{pmatrix} 0.100 \\ 0 \\ 0 \end{pmatrix}
+	\end{equation*}
+	\item \(\mathbf{^3_4 T_0}\): The fourth case is characterized by one rotation around the $z$-axis by $180^\circ$ and a second rotation around the $y$-axis by $-90^\circ$. The translational contribution is along the $z$-axis with a value of $0.325$ metres.
+	\begin{equation*}
+		^3_4 R = R_{z}(180^\circ) R_{y}(-90^\circ), \quad ^3_4 P = \begin{pmatrix} 0 \\ 0 \\ 0.325 \end{pmatrix}
+	\end{equation*}
+	\item \(\mathbf{^4_5 T_0}\): In this configuration, there are two different rotations, both of $-90^\circ$: the first around the $z$-axis and the second one around the $x$-axis. Additionally, there is a translation of $0.095$ metres along the $x$-axis.
+	\begin{equation*}
+		^4_5 R = R_{z}(-90^\circ) R_{x}(-90^\circ), \quad ^4_5 P = \begin{pmatrix} 0.095 \\ 0 \\ 0 \end{pmatrix}
+	\end{equation*}
+	\item \(\mathbf{^5_6 T_0}\): In this case, the rotation matrix consists of a single rotation around the $z$-axis with a value of $180^\circ$. The translation is along the $z$-axis with a value of $0.095$ metres.
+	\begin{equation*}
+		^5_6 R = R_{z}(180^\circ), \quad ^5_6 P = \begin{pmatrix} 0 \\ 0 \\ 0.095 \end{pmatrix}
+	\end{equation*}
+	\item \(\mathbf{^6_7 T_0}\): In the last case, there is no rotational contribution. The translation is along the $z$-axis with a value of $0.335$ metres.
+	\begin{equation*}
+		^6_7 R = I_{3x3}, \quad ^6_7 P = \begin{pmatrix} 0 \\ 0 \\ 0.355 \end{pmatrix}
+	\end{equation*}
+\end{itemize}
+
+\subsection*{Q1.2}
+For this exercise, we consider two distinct configurations for each pair of generic frames 
+$<i>$ and $<j>$ as defined before:
+\begin{itemize}
+	\item Configuration $q_{t-1}$: In this configuration, the transformation matrix of frame $<j>$ with respect to frame $<i>$ is expressed as: 
+	\begin{equation*}
+		^i_j T(q_{t-1}) = \begin{pmatrix}
+			^i_j R(q_{t-1}) & ^i_j P(q_{t-1}) \\
+			0_{3x3} & 1
+		\end{pmatrix}
+	\end{equation*}
+	\item Configuration $q_{t}$: both frames independently undergo rotations and traslations. Frame $<j>$ could either rotates according to $R_{j}(q_{t})$ and traslates by $t_{j}(q_{t})$, then the updated transformation matrix $^i_j T(q_{t})$ between 
+	$<i>$ and $<j>$ in configuration $q_{t}$ is given by:
+	\begin{equation}
+		^i_j T(q_{t}) = \quad ^i_j T(q_{t-1}) \cdot T_{joint}(q_{t})
+		\label{eq:Final transformation matrix}
+	\end{equation}
+	where the update of
+	\begin{equation*}
+		T_{joint}(q_{t}) = \begin{pmatrix}
+			 R_{z}(q_{t}) & P_{z}(q_{t}) \\
+			0_{3x3} & 1
+		\end{pmatrix}
+	\end{equation*}
+	 depends on the type of joint being considered:
+	\begin{itemize}
+		\item Rotational Joint: then only the rotational part of the transformation matrix contribute to the new configuration. The rotation is along along the $z$-axis and the new $T_{joint}(q_{t})$ is:
+		\begin{equation*}
+			T_{joint}(q_{t}) = \begin{pmatrix}
+				\cos(q) & -\sin(q) & 0 & 0 \\
+				\sin(q) & \cos(q) & 0 & 0 \\
+				0 & 0 & 1 & 0 \\
+				0 & 0 & 0 & 1 \\
+			\end{pmatrix} 
+		\end{equation*}
+		\item Traslational Joint: in this case, there is only a translation along the $z$-axis, then $T_{joint}(q_{t})$ becomes:
+		\begin{equation*}
+		T_{joint}(q_{t}) = \begin{pmatrix}
+			1 & 0 & 0 & 0 \\
+			0 & 1 & 0 & 0 \\
+			0 & 0 & 1 & q \\
+			0 & 0 & 0 & 1 \\
+		\end{pmatrix} 
+		\end{equation*}
+	\end{itemize}
+\end{itemize}
+As shown in the Equation \eqref{eq:Final transformation matrix}, the computation of $^i_j T(q_{t})$ is based on updating the configuration $q_{t-1}$ by incorporating the incremental transformation from $q_{t-1}$ to $q_{t}$. 
+In particular, this approach enables the iterative calculation of transformation matrices for any pair of generic frames where $^i_j T(q_{t-1})$ represents the initial transformation, and $T_{joint}(q_{t})$ takes into account changes in configuration.
+\begin{gather*} %q = [pi/4, -pi/4, 0, -pi/4, 0, 0.15, pi/4];
+	^b_1 T(q_{t}) = \begin{pmatrix}
+		0.7071 & -0.7071 & 0 & 0 \\
+		0.7071 & 0.7071 & 0 & 0 \\
+		0 & 0 & 1.0000 & 0.1050 \\
+		0 & 0 & 0 & 1.0000
+	\end{pmatrix} \quad
+	^1_2 T(q_{t}) = \begin{pmatrix}
+		-0.7071 & 0.7071 & 0 & 0 \\
+		0 & 0 & 1.0000 & 0 \\
+		0.7071 & 0.7071 & 0 & 0.1100 \\
+		0 & 0 & 0 & 1.0000
+	\end{pmatrix} \\
+	\\
+	\quad ^2_3 T(q_{t}) = \begin{pmatrix}
+		0 & 0 & 1.0000 & 0.1000 \\
+		0 & -1.0000 & 0 & 0 \\
+		1.0000 & 0 & 0 & 0 \\
+		0 & 0 & 0 & 1.0000
+	\end{pmatrix} \quad
+	^3_4 T(q_{t}) = \begin{pmatrix}
+		0 & 0 & 1.0000 & 0 \\
+		0.7071 & -0.7071 & 0 & 0 \\
+		0.7071 & 0.7071 & 0 & 0.3250 \\
+		0 & 0 & 0 & 1.0000
+	\end{pmatrix} \quad \\
+	\\
+	\quad \quad ^4_5 T(q_{t}) = \begin{pmatrix}
+		0 & 0 & 1.0000 & 0.0950 \\
+		-1.0000 & 0 & 0 & 0 \\
+		0 & -1.0000 & 0 & 0 \\
+		0 & 0 & 0 & 1.0000
+	\end{pmatrix} \quad
+	^5_6 T(q_{t}) = \begin{pmatrix}
+		-1.0000 & 0 & 0 & 0 \\
+		0 & -1.0000 & 0 & 0 \\
+		0 & -0 & 1.0000 & 0.2450 \\
+		0 & 0 & 0 & 1.0000
+	\end{pmatrix} \quad \\
+	\\
+	^6_7 T(q_{t}) = \begin{pmatrix}
+		0.7071 & -0.7071 & 0 & 0 \\
+		0.7071 & 0.7071 & 0 & 0 \\
+		0 & 0 & 1.0000 & 0.355 \\
+		0 & 0 & 0 & 1.0000
+	\end{pmatrix} \quad
+	\nonumber
+\end{gather*}
+\begin{itemize}
+	\item $^b_1 T(q_{t})$: in this case, the value of $q$ is $\frac{\pi}{4}$, so there is only a rotation around the $z$-axis. The result can be verified by comparing the new matrix $^1_b T(q_{t})$ with $^b_1 T_{0}$ calculated in exercise 1. It is evident that there is a variation only in the $R_{z}(q)$ component, while $P_{z}(q)$ remains unchanged.
+	\item $^1_2 T(q_{t})$: for this configuration, the value of $q$ is $-\frac{\pi}{4}$. As in the previous case, only $R_{z}(q)$ contributes to the new configuration, while the traslational part remains unchanged. The value present in the last column derives from the initial configuration.
+	\item $^2_3 T(q_{t})$: in this case, since $q$ is zero, the configuration remains unchanged. It is evident that $^2_3 T(q_{t}) = \,^2_3 T_{0}$. 
+	\item $^3_4 T(q_{t})$: the value of $q$ in this configuration is $-\frac{\pi}{4}$. As a result, there is only a rotational contribution along the $z$-axis and no translation.
+	\item $^4_5 T(q_{t})$: the value of $q$, as in the case of $^2_3 T(q_{t})$, is zero. Therefore, no rotations or variations occur. The resulting matrix is equivalent to the initial matrix, $^4_5 T_{0}$.
+	\item $^5_6 T(q_{t})$: this configuration is characterized by a translational contribution, with $q$ equal to 0.15. The matrix remains unchanged from the initial configuration in terms of the rotational component, while $P_{z}(q)$ is affected by the traslation along the $z$-axis.
+	\item $^6_7 T(q_{t})$: in the final configuration, the value of $q$ is $\frac{\pi}{4}$, corresponding to a rotation around the $z$-axis. This means that the translational part, $P_{z}(q)$, remains unchanged. As a result, the new transformation matrix $^6_7 T(q_{t})$ will differ from the initial configuration matrix $^6_7 T_{0}$ only in its rotational component, specifically in the elements of the $R_{z}$ sub-matrix that encode the rotation about the $z$-axis.
+\end{itemize}
+\subsection*{Q1.3}
+For this part of the assignment, we used the following equation to compute the transformation matrix from the base to a given frame:
+\begin{equation*}
+	^i_e T = \prod_{i=1}^{e} {}^{i-1}_{i} T 
+\end{equation*}
+The task required computing the transformation matrices for two different configurations:
+\begin{equation*}
+		^b_e T = \begin{pmatrix}
+		-0.5000 & -0.5000 & -0.7071 & -0.7039\\
+		0.5000 & 0.5000 & -0.7071 & -0.7039 \\
+		0.7071 & -0.7071 & 0.0000 & 0.5155 \\
+		0 & 0 & 0 & 1.0000 \\
+		\end{pmatrix}
+\end{equation*}
+This matrix describe the final configuration of the manipulator after the simulation. The traslational's result along $z$ axes can be verified with Fig.\ref{fig:finalconfiguration_z}: it is evident that the total traslation is $0.5155$ metres; while the Fig.\ref{fig:finalconfiguration_xy} display the traslation's result, along $y$ and $x$ with the same value of $-0.7039$.%ripetere contributo rot????\\
+\\	$^5_3 T$ =
+
+\subsection*{Q1.4}
+In the last exercise, it is required to compute the Jacobian matrix of a manipulator for the end-effector, based on a given geometric model. \\
+The basic Jacobian matrix, which consists of two components: an angular contribution matrix $^b J^A_{e}$, and a linear contribution matrix $^b J^L_{e/b}$.
+The basic Jacobian is expressed as:
+	\begin{equation*}
+		\renewcommand{\arraystretch}{1.5}
+		^b J_{e/b} = \begin{pmatrix}
+			^b J^A_{e} \\ 
+			^b J^L_{e/b}
+		\end{pmatrix}
+	\end{equation*}
+	These contributions are computed based on the type of joint (prismatic or rotational) considered, using the following relationships:
+	\begin{equation}
+		\begin{array}{l}
+			\text{Rotational joint}\\ 
+			\text{Prismatic joint} \quad 
+		\end{array} {}
+		^bJ_{e}^A =
+		\begin{cases}
+			k_{z} \\
+			\mathbf{0}
+		\end{cases} {}
+		^bJ_{e/b}^L =
+		\begin{cases}
+			k_{z} \times r_{e/b} \\
+			k_{z} 
+		\end{cases}
+	\end{equation}
+	where $\mathbf{k_{z}}$ is the unit vector along the joint axis, and $r_{e/b}$ is the position vector from the base to the end-effector.
+We obtain the Jacobian for the manipulator’s end-effector, which reflects both the joint
+ contributions and the rigid-body effects:
+\begin{equation*} 
+	^b J_{e/b} = \begin{pmatrix}
+		0 & 0 & 0 & 0 & 0 & 0 & 0\\
+		0 & 0 & 0 & 0 & 0 & 0 & 0\\
+		1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 0 & 1.0000 \\ 
+		0 & 0 & 0.0500 & 0.2125 & 0.2797 & 0 & 0.7039 \\
+		0 & 0 & -0.0500 & -0.2125 & -0.2797 & 0 & -0.7039 \\
+		0 & 0 & 0 & 0 & 0 & 1.0000 & 0\\
+	\end{pmatrix}	 
+\end{equation*}
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.9\linewidth]{MotionOfTheManipulator}
+	\caption{Descritpion of the manipulator's motion with a 3 dimentional graph. $x$ and $y$ are horizontal axis, while $z$ is vertical axes. Measurement's unit for the three axis is meters.}
+	\label{fig:motionofthemanipulator}
+\end{figure}
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.9\linewidth]{FinalConfiguration}
+	\caption{Configuration of the manipulator at the simulation's end. Measurement's unit for each axis is meters.}
+	\label{fig:finalconfiguration_z}
+\end{figure}
+\begin{figure}[h] 
+	\centering
+	\includegraphics[width=0.95\linewidth]{MotionOfTheManipulator_xy}
+	\caption{Fig.\ref{fig:motionofthemanipulator} on plane $xy$}
+	\label{fig:finalconfiguration_xy}
+\end{figure}
+
