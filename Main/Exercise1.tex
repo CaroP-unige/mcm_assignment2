@@ -203,15 +203,15 @@ or, applying the property $^i_j T = {}^k_i T^{-1} \cdot {}^k_j T$ it is possible
 \subsection*{Q1.4}
 The Jacobian matrix of the manipulator’s end-effector, which derives from a specified geometric model, comprises two distinct components: an angular contribution matrix $^b J^A_{e}$ and a linear contribution matrix $^b J^L_{e/b}$.
 It is defined as:
-\begin{equation*}
+\begin{equation}
 	\renewcommand{\arraystretch}{1.5}
 	^b J_{e/b} = \begin{pmatrix}
 		^b J^A_{e} \\ 
 		^b J^L_{e/b}
 	\end{pmatrix}
-\end{equation*}
+\end{equation}
 	These contributions are computed based on the type of joint considered (i.e., prismatic or rotational), using the following relationships:
-	\begin{equation*}
+	\begin{equation}
 		^bJ_{e}^A =
 		\begin{cases}
 			{}^b k_{z} \quad &\text{for rotational joint}\\
@@ -222,7 +222,7 @@ It is defined as:
 			{}^b (k_{z} \times r_{e/b})  \quad &\text{for rotational joint}\\
 			{}^b k_{z} \quad &\text{for prismatic joint}
 		\end{cases}
-	\end{equation*}
+	\end{equation}
 where $\mathbf{k_{z}}$ is the unit vector along the joint axis (i.e., the $z$-axis, as the $z$ axis coincides with the joint's rotation axis), and $r_{e/b}$ is the position vector from the base to the end-effector. Notice that ${}^b r_{e/b} = {}^b_j T \cdot (0,\,0,\,0,\,1)^T$, then the Jacobian for the manipulator’s end-effector given $\mathbf{q} = (\frac{\pi}{4},\,-\frac{\pi}{4},\,0,\,-\frac{\pi}{4},\,0,\,0.150,\,\frac{\pi}{4})$ is:
 \begin{equation*} 
 	^b J_{e/b} = \begin{pmatrix}
