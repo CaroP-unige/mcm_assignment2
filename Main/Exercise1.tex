@@ -93,7 +93,7 @@ When the chain's pose changes a good method to update the initial configuration 
 where $^i_j T$ is defined as the transformation matrix for the new pose, and $T_{\text{joint},\,j}$ is the transformation matrix that accounts for the joint’s change of configuration:
 \begin{equation}
 	T_{\text{joint},\,j} = \begin{pmatrix}
-		R_{z}(q_{j}) & P_j(q_{j,\,z}) \\
+		R_{z}(q_{j}) & P_j(q_{j}) \\
 		\mathbf{0_{1x3}} & 1
 	\end{pmatrix}
 \end{equation}
@@ -102,8 +102,8 @@ The joint $j$, since the $z$ axis is defined coinciding with the joint's rotatio
 		\item A rotational joint: Only the rotational part of the transformation matrix contribute to the new configuration. The rotation is along along the $z$-axis and the new $T_{\text{joint},\,j}$ is:
 		\begin{equation*}
 			T_{\text{joint},\,j} = \begin{pmatrix}
-				\cos(q) & -\sin(q) & 0 & 0 \\
-				\sin(q) & \cos(q) & 0 & 0 \\
+				\cos(q_j) & -\sin(q_j) & 0 & 0 \\
+				\sin(q_j) & \cos(q_j) & 0 & 0 \\
 				0 & 0 & 1 & 0 \\
 				0 & 0 & 0 & 1 \\
 			\end{pmatrix} 
@@ -113,7 +113,7 @@ The joint $j$, since the $z$ axis is defined coinciding with the joint's rotatio
 		T_{\text{joint},\,j} = \begin{pmatrix}
 			1 & 0 & 0 & 0 \\
 			0 & 1 & 0 & 0 \\
-			0 & 0 & 1 & q \\
+			0 & 0 & 1 & q_j \\
 			0 & 0 & 0 & 1 \\
 		\end{pmatrix} 
 		\end{equation*}
@@ -123,47 +123,45 @@ For instance, given the vector $\mathbf{q} = (\frac{\pi}{4},\,-\frac{\pi}{4},\,0
 	^b_1 T = \begin{pmatrix}
 		0.7071 & -0.7071 & 0 & 0 \\
 		0.7071 & 0.7071 & 0 & 0 \\
-		0 & 0 & 1.0000 & 0.1050 \\
-		0 & 0 & 0 & 1.0000
+		0 & 0 & 1 & 0.1050 \\
+		0 & 0 & 0 & 1
 	\end{pmatrix} \quad
 	^1_2 T = \begin{pmatrix}
 		-0.7071 & 0.7071 & 0 & 0 \\
-		0 & 0 & 1.0000 & 0 \\
+		0 & 0 & 1 & 0 \\
 		0.7071 & 0.7071 & 0 & 0.1100 \\
-		0 & 0 & 0 & 1.0000
-	\end{pmatrix} \\
-	\\
-	\quad ^2_3 T = \begin{pmatrix}
-		0 & 0 & 1.0000 & 0.1000 \\
-		0 & -1.0000 & 0 & 0 \\
-		1.0000 & 0 & 0 & 0 \\
-		0 & 0 & 0 & 1.0000
+		0 & 0 & 0 & 1
 	\end{pmatrix} \quad
+	\quad ^2_3 T = \begin{pmatrix}
+		0 & 0 & 1 & 0.1000 \\
+		0 & -1 & 0 & 0 \\
+		1 & 0 & 0 & 0 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \\
 	^3_4 T = \begin{pmatrix}
-		0 & 0 & 1.0000 & 0 \\
+		0 & 0 & 1 & 0 \\
 		0.7071 & -0.7071 & 0 & 0 \\
 		0.7071 & 0.7071 & 0 & 0.3250 \\
-		0 & 0 & 0 & 1.0000
-	\end{pmatrix} \quad \\
-	\\
+		0 & 0 & 0 & 1
+	\end{pmatrix} \quad
 	\quad \quad ^4_5 T = \begin{pmatrix}
-		0 & 0 & 1.0000 & 0.0950 \\
-		-1.0000 & 0 & 0 & 0 \\
-		0 & -1.0000 & 0 & 0 \\
-		0 & 0 & 0 & 1.0000
+		0 & 0 & 1 & 0.0950 \\
+		-1 & 0 & 0 & 0 \\
+		0 & -1 & 0 & 0 \\
+		0 & 0 & 0 & 1
 	\end{pmatrix} \quad
 	^5_6 T = \begin{pmatrix}
-		-1.0000 & 0 & 0 & 0 \\
-		0 & -1.0000 & 0 & 0 \\
-		0 & -0 & 1.0000 & 0.2450 \\
-		0 & 0 & 0 & 1.0000
+		-1 & 0 & 0 & 0 \\
+		0 & -1 & 0 & 0 \\
+		0 & -0 & 1 & 0.2450 \\
+		0 & 0 & 0 & 1
 	\end{pmatrix} \quad \\
 	\\
-	^6_7 T = \begin{pmatrix}
+	^6_e T = \begin{pmatrix}
 		0.7071 & -0.7071 & 0 & 0 \\
 		0.7071 & 0.7071 & 0 & 0 \\
-		0 & 0 & 1.0000 & 0.355 \\
-		0 & 0 & 0 & 1.0000
+		0 & 0 & 1 & 0.3550 \\
+		0 & 0 & 0 & 1
 	\end{pmatrix} \quad
 	\nonumber
 \end{gather*}
@@ -176,18 +174,19 @@ For instance, given the vector $\mathbf{q} = (\frac{\pi}{4},\,-\frac{\pi}{4},\,0
 	\item $^5_6 T$ exhibits a translational contribution, on account of $q_6 = 0.15$. The rotational component of the matrix remains unchanged from the initial configuration. However, $P_{z}(q_6)$ is modified due to the translation along the $z$-axis.
 	\item $^6_7 T$ shows, coherently with $q_7 = \frac{\pi}{4}$, a rotation around the $z$-axis. This means that the translational part, $P_{z}(q_7)$, remains unchanged. As result, the new transformation matrix $^6_7 T$ will differ from the initial configuration matrix $^6_7 T_{0}$ only in its rotational component.
 \end{itemize}
-\subsection*{Q1.3}
+
+\subsection{Q1.3}
 The computation of the transformation matrices from the base frame $<b>$ to a given frame $<i>$ is directly governed by the following property:
 \begin{equation}
 	^b_e T = \prod_{j=1}^{e}\, {}^{i}_{j} T\Big\vert _{i=j-1}
 \end{equation}
-where generally the frame $<b>$ has the value $i=0$. For instance, it is possible to compute $^b_e T$ for the new transformation matrices:
+where generally the base frame $<b>$ has the value $i=0$. For instance, it is possible to compute $^b_e T$ for the new transformation matrices:
 \begin{equation*}
 		^b_e T = \begin{pmatrix}
 		-0.5000 & -0.5000 & -0.7071 & -0.7039\\
 		0.5000 & 0.5000 & -0.7071 & -0.7039 \\
-		0.7071 & -0.7071 & 0.0000 & 0.5155 \\
-		0 & 0 & 0 & 1.0000 \\
+		0.7071 & -0.7071 & 0 & 0.5155 \\
+		0 & 0 & 0 & 1 \\
 		\end{pmatrix}
 \end{equation*}
 or, applying the property $^i_j T = {}^k_i T^{-1} \cdot {}^k_j T$ it is possible to compute
@@ -200,7 +199,7 @@ or, applying the property $^i_j T = {}^k_i T^{-1} \cdot {}^k_j T$ it is possible
          \end{pmatrix}
 \end{equation*}
 
-\subsection*{Q1.4}
+\subsection{Q1.4}
 The Jacobian matrix of the manipulator’s end-effector, which derives from a specified geometric model, comprises two distinct components: an angular contribution matrix $^b J^A_{e}$ and a linear contribution matrix $^b J^L_{e/b}$.
 It is defined as:
 \begin{equation}
@@ -228,32 +227,30 @@ where $\mathbf{k_{z}}$ is the unit vector along the joint axis (i.e., the $z$-ax
 	^b J_{e/b} = \begin{pmatrix}
 		0 & 0 & 0 & 0 & 0 & 0 & 0\\
 		0 & 0 & 0 & 0 & 0 & 0 & 0\\
-		1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 0 & 1.0000 \\ 
+		1 & 1 & 1 & 1 & 1 & 0 & 1 \\ 
 		0 & 0 & 0.0500 & 0.2125 & 0.2797 & 0 & 0.7039 \\
 		0 & 0 & -0.0500 & -0.2125 & -0.2797 & 0 & -0.7039 \\
-		0 & 0 & 0 & 0 & 0 & 1.0000 & 0\\
+		0 & 0 & 0 & 0 & 0 & 1 & 0\\
 	\end{pmatrix}
 \end{equation*}
 
-%\begin{figure}[h] 
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{MotionOfTheManipulator}
-%	\caption{Descritpion of the manipulator's motion with a 3 dimentional graph. $x$ and $y$ are horizontal axis, while $z$ is vertical axes. Measurement's unit for the three axis is meters.}
-%	\label{fig:motionofthemanipulator}
-%\end{figure}
-%\begin{figure}[h] 
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{FinalConfiguration}
-%	\caption{Configuration of the manipulator at the simulation's end. Measurement's unit for each axis is meters.}
-%	\label{fig:finalconfiguration_z}
-%\end{figure}
-%\begin{figure}[h] 
-%	\centering
-%	\includegraphics[width=0.95\linewidth]{MotionOfTheManipulator_xy}
-%	\caption{Fig.\ref{fig:motionofthemanipulator} on plane $xy$}
-%	\label{fig:finalconfiguration_xy}
-%\end{figure}
-
-% Q1.1: notazione pedici P
-% modifica axis e axes
-% \pi in Q1.2
+ As evidence of the validity of the methods described thus far, a movement simulation is provided, see Figure \ref{fig::MotionOfTheManipulator}. The serial chain movement commences with configuration $\mathbf{q}_i = (\frac{\pi}{4},\,-\frac{\pi}{4},\,0,\,-\frac{\pi}{4},\,0,\,0.150,\,\frac{\pi}{4})$ and terminates with configuration $\mathbf{q}_f = (\frac{\pi}{4}+\frac{\pi}{6},\,-\frac{\pi}{4},\,0,\,-\frac{\pi}{4},\,0,\,0.150,\,\frac{\pi}{4})$, as depicted in Figure \ref{fig::FinalConfiguration}. This means that the first joint rotate counterclockwise around $z$-axis of $\frac{\pi}{6}$ with respect to $q_{i,\,1}$ as shown in Figure \ref{fig::MotionOfTheManipulator_top}.
+ 
+ \begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Resources/MotionOfTheManipulator}
+	\caption{Description of the manipulator’s simulation motion in a three-dimensional graph. The horizontal axes, denoted by $x$ and $y$, represent the horizontal motion, while the vertical axis, denoted by $z$, represents the vertical motion. The measurement units for all three axes are meters.}
+	\label{fig::MotionOfTheManipulator}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Resources/MotionOfTheManipulator_top}
+	\caption{Representation of the manipulator’s simulated motion on the Cartesian plane $(x, y)$. The measurement units for the three axes are meters.}
+	\label{fig::MotionOfTheManipulator_top}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Resources/FinalConfiguration}
+	\caption{Final configuration of the robot during simulated motion on the Cartesian plane $(y, z)$. The measurement units for the three axes are meters.}
+	\label{fig::FinalConfiguration}
+\end{figure}
