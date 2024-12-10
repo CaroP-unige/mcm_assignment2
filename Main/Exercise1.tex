@@ -153,7 +153,7 @@ For instance, given the vector $\mathbf{q} = (\frac{\pi}{4},\,-\frac{\pi}{4},\,0
 	^5_6 T = \begin{pmatrix}
 		-1 & 0 & 0 & 0 \\
 		0 & -1 & 0 & 0 \\
-		0 & -0 & 1 & 0.2450 \\
+		0 & 0 & 1 & 0.2450 \\
 		0 & 0 & 0 & 1
 	\end{pmatrix} \quad \\
 	\\
@@ -216,21 +216,21 @@ It is defined as:
 			{}^b k_{z} \quad &\text{for rotational joint}\\
 			\mathbf{0} \quad &\text{for prismatic joint}
 		\end{cases} \quad
-		{}^bJ_{e/b}^L =
+		{}^bJ_{e/j}^L =
 		\begin{cases}
-			{}^b (k_{z} \times r_{e/b})  \quad &\text{for rotational joint}\\
+			{}^b (k_{z} \times r_{e/j})  \quad &\text{for rotational joint}\\
 			{}^b k_{z} \quad &\text{for prismatic joint}
 		\end{cases}
 	\end{equation}
-where $\mathbf{k_{z}}$ is the unit vector along the joint axis (i.e., the $z$-axis, as the $z$ axis coincides with the joint's rotation axis), and $r_{e/b}$ is the position vector from the base to the end-effector. Notice that ${}^b r_{e/b} = {}^b_j T \cdot (0,\,0,\,0,\,1)^T$, then the Jacobian for the manipulator’s end-effector given $\mathbf{q} = (\frac{\pi}{4},\,-\frac{\pi}{4},\,0,\,-\frac{\pi}{4},\,0,\,0.150,\,\frac{\pi}{4})$ is:
+where $\mathbf{k_{z}}$ is the unit vector along the joint axis (i.e., the $z$-axis, as the $z$ axis coincides with the joint's rotation axis), and $r_{e/b}$ is the position vector from the base to the end-effector. Notice that ${}^b r_{e/j} = {}^b r_{e/b} - {}^b r_{j/b}$, then the Jacobian for the manipulator’s end-effector given $\mathbf{q} = (\frac{\pi}{4},\,-\frac{\pi}{4},\,0,\,-\frac{\pi}{4},\,0,\,0.150,\,\frac{\pi}{4})$ is:
 \begin{equation*} 
 	^b J_{e/b} = \begin{pmatrix}
-		0 & 0 & 0 & 0 & 0 & 0 & 0\\
-		0 & 0 & 0 & 0 & 0 & 0 & 0\\
-		1 & 1 & 1 & 1 & 1 & 0 & 1 \\ 
-		0 & 0 & 0.0500 & 0.2125 & 0.2797 & 0 & 0.7039 \\
-		0 & 0 & -0.0500 & -0.2125 & -0.2797 & 0 & -0.7039 \\
-		0 & 0 & 0 & 0 & 0 & 1 & 0\\
+		0 & -0.7071 & -0.5000 & -0.7071 & -0.7071 & 0 & -0.7071 \\
+		0 & 0.7071 & -0.5000 & 0.7071 & -0.7071 & 0 & -0.7071 \\
+		1 & 0 & 0.7071 & 0 & 0 & 0 & 0 \\
+		0.7039 & 0.2125 & 0.3475 & 0 & 0 & -0.7071 & 0 \\
+		-0.7039 & 0.2125 & -0.3475 & 0 & 0 & -0.7071 & 0 \\
+		0 & 0.9955 & 0 & 0.6950 & 0 & 0 & 0
 	\end{pmatrix}
 \end{equation*}
 
@@ -254,3 +254,4 @@ where $\mathbf{k_{z}}$ is the unit vector along the joint axis (i.e., the $z$-ax
 	\caption{Final configuration of the robot during simulated motion on the Cartesian plane $(y, z)$. The measurement units for the three axes are meters.}
 	\label{fig::FinalConfiguration}
 \end{figure}
+
